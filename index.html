@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Caffe Igrač</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logoo.png.jpg">
+
+
+</head>
+<body>
+
+  
+  
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="position: left;">Caffe Igrač</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <br>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link" href="#">Cjenik</a>
+              <div class="dropdown-content">
+                <a href="topli.html">Topli napitci</a>
+                <a href="Sladoledi.html">Sladoled</a>
+                <a href="alkohol.html">Alkoholna pića</a>
+                <a href="voda.html">Voda</a>
+                <a href="pivo.html">Pivo</a>
+                <a href="vino.html">Vino</a>
+                <a href="sokovi.html">Sokovi</a>
+              </div>
+            </div>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recenzija" target="_self">Recenzije</a>
+          </li>
+          <li class="nav-item">
+            <a  class="nav-link"href="#footer" target="_self">Informacije</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  
+    <nav class="linkovi">
+      
+    </nav>
+
+      <script src="projekt.js"></script>
+      
+  <div class="jumbotron">
+    
+    <h1 class="display-4" style="font-family:'Courier New', Courier, monospace">Dobrodošli u Caffe Igrač</h1>
+    <p class="lead wow animate__animated animate__slideInUp">Uživajte u trenucima i vrhunskim pićima.</p>
+  </div>
+
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+         <a href="instagram.com">
+            <img width= "50 px";
+            height="50px";
+            src="instagram.jpg" alt="instagram" class="instagram"> 
+
+         </a>
+         <a href="facebook.com"> <img width= "50 px";
+            height="50px";
+            src="fejs.jpg" alt="facebook" class="instagram"> </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+
+<div class="recenzije">
+  <div class="recenzija">
+    <h3>Marija</h3>
+    <p>Ovaj kafić ima predivan ambijent i vrhunsku uslugu. Kava je uvijek svježe pripremljena i ukusna, a osoblje je iznimno ljubazno. Definitivno preporučujem posjet ovom kafiću!</p>
+  </div>
+  <div class="recenzija">
+    <h3>Ante</h3>
+    <p> Osoblje je uvijek susretljivo i brzo poslužuje. Jako ugodno mjesto za opuštanje i druženje s prijateljima.</p>
+  </div>
+  <div class="recenzija">
+    <h3>Mario</h3>
+    <p>Odličan kafić s odličnom atmosferom! Obožavam pratiti utakmice upravo zbog odlične atmosfere.</p>
+  </div>
+</div>
+<div class="unos-recenzije">
+  <h2>Ostavite recenziju</h2>
+  <form>
+    <input type="text" id="ime" placeholder="Vaše ime" required>
+    <textarea id="recenzija" placeholder="Vaša recenzija" required></textarea>
+    <button type="button" onclick="provjeriRecenziju()">Pošalji recenziju</button>
+  </form>
+</div>
+  <script>function provjeriRecenziju() {
+    var ime = document.getElementById("ime").value;
+    var recenzija = document.getElementById("recenzija").value;
+  
+    if (recenzija.trim() !== "") {
+      alert("Hvala na recenziji, " + ime + "!");
+    } else {
+      alert("Niste ispunili recenziju.");
+    }
+  }
+  </script>
+  </form>
+</div>
+<script src="projekt.js"></script>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--Footer-->
+<div class="container-fluid padding" id="footer">
+<div class="row text-center">
+    <div class="col-md-4">
+      <hr class="light">
+      <h5>Kontakt</h5>
+        <hr class="light">
+        <p>+387 64 354 219</p>
+        
+    </div>
+    <div class="col-md-4">
+        <hr class="light">
+        <h5>Radno vrijeme</h5>
+        <hr class="light">
+        <p>Ponedjeljak-Nedjelja: 7:00 - 00:00</p>
+        </div>
+
+        <div class="col-md-4">
+          <hr class="light">
+          <h5>Lokacija</h5>
+          <hr class="light">
+        <p>Rakitno, Vrpolje bb, Bosnia and Herzegovina</p>
+    </div>
+    <div class="col-12">
+        <hr class="light-100">
+        <h5>&copy; CaffeIgrac.com</h5>
+    </div>
+</div>
+</div>
+  
+</div>
+</body>
+</html>
+
