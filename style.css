@@ -1,0 +1,213 @@
+
+    body {
+      padding-top: 60px;
+      background-image: url("image_67227649.JPG");
+      background-size: cover;
+      background-repeat: no-repeat;
+      animation: slideBackground 20s linear infinite;
+      animation-name: slideBackground;
+      animation-duration: 20s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes slideBackground {
+      0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+
+          
+    .navbar {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .jumbotron {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: wavy;
+    -webkit-text-fill-color: rgb(223, 180, 180);
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .footer {
+      color: #fff;
+      padding: 10px 0;
+    }
+    .bg-dark {
+      background-color: #343a40 !important;
+    }
+    .col-md-12{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        -webkit-text-fill-color: rgb(255, 198, 198);
+    }
+  .instagram{
+    border-radius: 50px;
+  }
+  .linkovi{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-style: italic;
+    font-weight: bold;
+    margin-top: 2;
+    margin-bottom: 5;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  #footer {
+    background-color: #97794b70;
+    color:#d5d5d5;
+    padding-top: 2rem;
+}
+hr.light{
+    border-top:1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+footer a{
+    color:#d5d5d5;
+}
+hr.light-100{
+    border-top:1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+.recenzije {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #97794b70;
+}
+
+.recenzija {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #bda06a49;
+  text-align: center;
+}
+
+.recenzija img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.recenzija h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.recenzija p {
+  font-size: 14px;
+  color: #000000;
+}
+.unos-recenzije {
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.unos-recenzije h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.unos-recenzije form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unos-recenzije input[type="text"],
+.unos-recenzije textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.unos-recenzije textarea {
+  height: 100px;
+}
+
+.unos-recenzije button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.unos-recenzije button[type="submit"]:hover {
+  background-color: #666;
+}
+.vodi{
+  background: fixed;
+  background-color: #33333300;
+  font-style: italic;
+  color: aliceblue;
+  transition: opacity 0.3s ease;
+}
+
+.vodi:hover {
+  opacity: 0.7; 
+  color: rgba(240, 248, 255, 0.11);
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  display: none;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.recenzija {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
